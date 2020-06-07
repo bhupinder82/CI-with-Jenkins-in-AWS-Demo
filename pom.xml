@@ -51,18 +51,12 @@
             </plugin>
         </plugins>
     </build>
-    <distributionManagement>
+<distributionManagement>
     <repository>
         <id>nexus</id>
         <name>gitone_releases</name>
         <url>http://34.77.216.90:8081/repository/bhupinder-demo/</url>
     </repository>
-
-    <snapshotRepository>
-        <id>nexus</id>
-        <name>gitone_snapshots</name>
-        <url>http://34.77.216.90:8081/repository/maven-snapshots/</url>
-    </snapshotRepository>
 </distributionManagement>
     
 </project>
