@@ -5,7 +5,7 @@
     <artifactId>test</artifactId>
     <version>0.0.1</version>
     <name>artifactory-test</name>
-    <!-- <packaging>pom</packaging> -->
+    <packaging>war</packaging>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -27,6 +27,9 @@
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-war-plugin</artifactId>
+                    <configuration>
+                        <webXml>src\main\Webapp\WEB-INF\web.xml</webXml>        
+                    </configuration>
                 </plugin>
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
