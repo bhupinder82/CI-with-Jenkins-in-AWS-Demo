@@ -1,3 +1,5 @@
 FROM tomcat
-COPY project-1.0-RAMA.war /usr/local/tomcat/webapps
+
+COPY test-0.0.1.war /usr/local/tomcat/webapps
+
 CMD "catalina.sh" "run"
