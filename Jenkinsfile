@@ -30,6 +30,7 @@ pipeline {
     stage("Build image") {
         steps {
             script {
+                //sh 'docker build -t mynginx:${env.BUILD_ID}'
                 myapp = docker.build("surajitkundu1904/kube8s:${env.BUILD_ID}")
             }
         }
