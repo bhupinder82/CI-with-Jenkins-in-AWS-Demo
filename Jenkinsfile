@@ -4,8 +4,8 @@ pipeline {
 
  environment {
     PROJECT_ID = 'tribal-cortex-266416'
-    CLUSTER_NAME = 'kube-cluster-superleague'
-    LOCATION = 'us-central1-a'
+    CLUSTER_NAME = 'cluster-1'
+    LOCATION = 'us-central1-c'
     CREDENTIALS_ID = 'kubernetes'
  }
 
@@ -31,7 +31,7 @@ pipeline {
         steps {
             script {
                 //sh 'docker build -t mynginx:${env.BUILD_ID}'
-                myapp = docker.build("surajitkundu1904/kube8s:${env.BUILD_ID}")
+                myapp = docker.build("bhupinder82/kube8s:${env.BUILD_ID}")
             }
         }
     }
